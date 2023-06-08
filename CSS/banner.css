@@ -1,0 +1,91 @@
+.banner{
+    position: relative;
+    top:110px;
+    width: 100vw;
+}
+
+.banner_titulo{
+    position: absolute;
+    height: 100px;
+    top:0px;
+    left: calc(100vw * 0.07);
+}
+
+h1{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: calc(100vw * 0.07);
+    color: purple;
+    text-shadow: 5px 5px 10px yellow, 10px 10px 10px red;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black ;
+}
+
+.banner_fundo{
+    background-image: url("../Imagens/bannerPrincipal.png");
+    background-size: cover;
+    width: 100vw;
+    height: 40vw;
+    box-sizing: border-box;
+}
+
+.banner_Ivad{
+    position: absolute;
+    top: -1vw;
+    left: 10%;
+    width: 32%;
+}
+
+.banner_botao{
+    width: 30vw;
+    position: absolute;
+    top: calc(20vw + 50px);
+    left: 35%;
+}
+
+.banner_botao:hover{
+    width: 35vw;
+    top: calc(18vw + 50px);
+    left: 32%;
+
+}
+
+@media screen and (max-width: 480px){
+
+    .banner_fundo{
+        background-image: url("../Imagens/Banerportatil.png");
+        width: 100vw;
+        height: calc(80vw + 320px);
+    }
+
+    .banner_titulo{
+        top:15px;
+        left: calc(100vw * 0.07);
+    }
+
+    .banner_botao{
+        width: 70vw;
+        position: absolute;
+        top: calc(100vw + 50px);
+        left: 15%;
+    }
+
+    h1{
+        font-size: calc(200vw * 0.07);
+    }
+    .banner_Ivad{
+        top: 45vw;
+        left: -10%;
+        width: 80%;
+    }
+
+    .banner_botao:hover{
+        width: 75vw;
+        top: calc(85vw + 50px);
+        left: 12%;
+    
+    }
+}
+
+
+
+

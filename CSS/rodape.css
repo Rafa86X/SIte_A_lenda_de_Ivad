@@ -1,0 +1,50 @@
+.rodape{
+    width: 100vw;
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top:850px;    
+}
+
+
+
+.rodape_imagens img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    vertical-align: top;
+    height: 80px;
+    margin: 20px 10px 10px 10px;
+}
+
+@media screen and (max-width: 920px){
+    .rodape_imagens img{
+        height: 80px;
+        margin-top: 20px;
+    }
+    .rodape{
+        top:800px;    
+    }
+}
+
+@media screen and (max-width: 790px){
+
+    .rodape_imagens img{
+        height: 80px;
+        margin-top: 20px;
+    }
+    .rodape{
+        top: 600px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .rodape{
+        height: 80px;       
+    }
+    .rodape_imagens img{
+        height: 40px;
+        margin-top: 25px;
+    }
+}

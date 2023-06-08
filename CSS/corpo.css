@@ -1,0 +1,13 @@
+html{
+    
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+
+:target{
+    scroll-margin-top: 80px;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+}

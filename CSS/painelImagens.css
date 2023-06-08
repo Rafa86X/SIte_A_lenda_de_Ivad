@@ -1,0 +1,228 @@
+.p_imagens{ 
+    position: absolute;
+    top:calc(40vw + 110px);
+    background: url("../Imagens/bloco.png");
+    background-color: #794899;
+    width: 100vw;
+    height: 750px;    
+}
+
+.p_imagens__titulo{
+    font-size: 30px;
+    margin-top: 40px;
+    color: rgb(90, 5, 90);
+    text-align: center;
+    padding: 20px;
+    border-top: 10px solid rgb(116, 6, 116);
+    border-bottom: 10px solid rgb(116, 6, 116);
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 2;
+}
+
+#imagens{
+    position: absolute;
+    top:-100px;
+}
+
+.p_imagens_carrocel_conteudo{
+    width: 750px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top:50px;
+    left: 50vw;
+    transform: translate(-50%, 0);
+    border: 10px solid rgb(121, 3, 121);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 247, 255), -5px -5px 10px rgb(0, 247, 255);
+}
+
+.p_imagens_carrocel_navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+}
+
+.p_imagens_carrocel_navegacao_barra{
+    width: 70px;
+    height: 20px;
+    border: 2px solid rgb(53, 61, 180);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 1rem;
+    transition: .4s;
+
+}
+
+.p_imagens_carrocel_navegacao_barra:hover{
+    background-color: rgb(129, 56, 212);
+}
+
+
+
+.p_imagens_carrocel_navegacao input{
+    display: none;
+
+}
+
+.p_imagens_carrocel_conteudo_slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.p_imagens_carrocel_conteudo_slide{
+    width: 20%;
+    transition: .7s;
+}
+
+.p_imagens_carrocel_conteudo_slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .b1{
+    background-color: red;
+}
+
+#r2:checked ~ .b2{
+    background-color: red;
+}
+#r3:checked ~ .b3{
+    background-color: red;
+}
+#r4:checked ~ .b4{
+    background-color: red;
+}
+#r5:checked ~ .b5{
+    background-color: red;
+}
+
+.p_imagens__imgtelatoda{
+    position: absolute;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display:none;
+}
+
+.p_imagens__imgtelatoda img{
+    position: relative;
+    width: 90vw;
+    max-width: 1200px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid rgb(35, 255, 6);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(139, 99, 226), -5px -5px 10px rgb(139, 99, 226);
+}
+
+.p_imagens_imgtelatoda__botao{
+    position: absolute;
+    top:50px;
+    right: 20px;
+}
+
+.p_imagens_imgtelatoda__botao img{
+    width: 60px;
+    height: 60px;
+    border: 5px solid rgb(238, 255, 6);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(255, 0, 64), -5px -5px 10px rgb(255, 0, 64);
+}
+
+.p_imagens_carrocel_conteudo_slide img:hover{
+    
+    cursor: pointer;
+}
+
+.p_imagens_imgtelatoda__botao img:hover{
+
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 920px){
+
+    .p_imagens{ 
+        height: 700px;    
+    }
+
+    .p_imagens__titulo{
+        font-size: 25px;
+    }
+    .p_imagens_carrocel_conteudo{
+        width: 540px;
+        height: 300px;
+    }
+
+    .p_imagens__imgtelatoda img{
+        position: relative;
+        width: 70vw;
+    }
+
+    .p_imagens_imgtelatoda__botao img{
+        width: 60px;
+        height: 60px;
+        border: 5px solid rgb(238, 255, 6);
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgb(255, 0, 64), -5px -5px 10px rgb(255, 0, 64);
+    }
+    
+}
+
+@media screen and (max-width: 790px){
+
+    .p_imagens__titulo{
+        font-size: 16px;
+    }
+    .p_imagens_carrocel_conteudo{
+        top:25px;
+        width: 400px;
+        height: 250px;
+    }
+
+    .p_imagens{ 
+        height: 512px;    
+    }
+    .p_imagens_carrocel_navegacao{
+        bottom: 1px;
+    }
+    .p_imagens_carrocel_navegacao_barra{
+        width: 30px;
+        height: 20px;
+        margin: 0 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .p_imagens{
+        top:calc(150vw + 110px);
+        height: 1000px;
+    }
+
+    .p_imagens__titulo{
+        font-size: 13px;
+    }
+
+    .p_imagens_carrocel_conteudo{
+        width: 100vw;
+        border: none;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .p_imagens_imgtelatoda__botao img{
+        border-radius: 0px;
+        
+    }
+    
+
+}

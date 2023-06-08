@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>A Lenda de Ivad</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/cabecalho.css">
+    <link rel="stylesheet" href="./CSS/banner.css">
+    <link rel="stylesheet" href="./CSS/corpo.css">
+    <link rel="stylesheet" href="./CSS/painelImagens.css">
+    <link rel="stylesheet" href="./CSS/painelVideo.css">
+    <link rel="stylesheet" href="./CSS/painelContato.css">
+    <link rel="stylesheet" href="./CSS/rodape.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+
+
+</head>
+<body id="body">
+    <header class="cabecalho container">
+
+        <img src="./Imagens/bloco2.png" alt="Logo do desenvolvedor do Jogo Ivad" class="cabecalho__logo">
+    
+        <nav class="cabecalho__navegacao">
+            <ul class="cabecalho__navegacao__lista">
+                <li class="cabecalho__link"><a class="cabecalho_link_texto" href="chrome://flags/#smooth-scrolling">DownLoad</a></li>
+                <li class="cabecalho__link"><a class="cabecalho_link_texto" onclick="movepImagens()">Imagens</a></li>
+                <li class="cabecalho__link"><a class="cabecalho_link_texto" href="#video">Videos</a></li>
+                <li class="cabecalho__link"><a class="cabecalho_link_texto" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         <section class="banner">
+                <div class="banner_titulo"><h1>A lenda de Ivad</h1></div>
+                <a href="#3"><img src="./Imagens/BotaoDownload.png" alt="Botão de DownLoad do jogo Ivad" id="banner_botao" class="banner_botao" ></a>          
+                <img src="./Imagens/Ivad/Ivad1.png" id="T_Ivad" alt="Heroi Ivad voando" class="banner_Ivad">
+
+                <div alt="Banner do jogo Ivad" class="banner_fundo"></div>
+                
+        </section>
+         <section class="p_imagens"  >
+
+                <p class="p_imagens__titulo">
+                   Diversão Garantida! 
+                   <br>
+                   Baixe Agora e Divirta-se!
+                </p> 
+                <div class="p_imagens_carrocel_conteudo"  >
+                    <div id="imagens"></div>
+                    <div class="p_imagens_carrocel_conteudo_slides">
+                        <div class="p_imagens_carrocel_conteudo_slide" id="first">
+                           <a onclick="imgfull(1)"><img src="./Imagens/PrintGame/b1.png" alt="Print de tela fase 2 do jogo"></a>
+                        </div>
+                        <div class="p_imagens_carrocel_conteudo_slide">
+                            <a onclick="imgfull(2)"><img src="./Imagens/PrintGame/b8.png" alt="Print de tela fase 21 do jogo"></a>
+                        </div>
+                        <div class="p_imagens_carrocel_conteudo_slide">
+                            <a onclick="imgfull(3)"><img src="./Imagens/PrintGame/b7.png" alt="Print de tela fase 17 do jogo"></a>
+                        </div>
+                        <div class="p_imagens_carrocel_conteudo_slide">
+                            <a onclick="imgfull(4)"><img src="./Imagens/PrintGame/b4.png" alt="Print de tela fase 9 do jogo"></a>
+                        </div>
+                        <div class="p_imagens_carrocel_conteudo_slide">
+                            <a onclick="imgfull(5)"><img src="./Imagens/PrintGame/b5.png" alt="Print de tela fase 10 do jogo"></a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="p_imagens_carrocel_navegacao" >
+                        <input type="radio" name="r" id="r1" checked onclick="passa1(1), clk(1)">
+                        <input type="radio" name="r" id="r2" onclick="passa1(2), clk(2)">
+                        <input type="radio" name="r" id="r3" onclick="passa1(3), clk(3)">
+                        <input type="radio" name="r" id="r4" onclick="passa1(4), clk(4)">
+                        <input type="radio" name="r" id="r5" onclick="passa1(5), clk(5)">                      
+                        <label  for="r1" class="p_imagens_carrocel_navegacao_barra b1"></label>
+                        <label  for="r2" class="p_imagens_carrocel_navegacao_barra b2"></label>
+                        <label  for="r3" class="p_imagens_carrocel_navegacao_barra b3"></label>
+                        <label  for="r4" class="p_imagens_carrocel_navegacao_barra b4"></label>
+                        <label  for="r5"class="p_imagens_carrocel_navegacao_barra b5"></label>
+                    </div>
+                </div>
+        </section>
+        <section class="p_video" >
+                <div class="p_video_conteudo">
+                    <p class="p_video__titulo">
+                        Desafios de quebrar a cabeça! 
+                        <br>
+                        Grátis e sem propagandas!
+                        </p> 
+                </div>
+                <div class="p_video_video" id="video">
+                    <iframe class="p_video_video_player" width="750" height="400" src="https://www.youtube.com/embed/Ep2l2npnGT4" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+                </div>
+        </section>
+        <section class="p_contato" id="contato" >            
+                <div class="p_contato_conteudo">
+                    <p class="p_contato__titulo">
+                        Falar com o desenvolvedor? 
+                        <br>
+                        Mande email para:
+                        <br>
+                        <br>
+                        <a class="p_contato__email" href="mailto:rafadevweb@gmail.com" > rafadevweb@gmail.com</a>                          
+                        <br>                         
+                    </p>
+                </div>
+            
+        </section>
+                
+        <div class="p_imagens__imgtelatoda" id="p_imagens__imgtelatoda">
+            <img id="p_imagens_imgtelatoda__img">
+            <a onclick="imfDesfull()" class="p_imagens_imgtelatoda__botao"><img src="./Imagens/BotaoSair.png" alt=""></a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="rodape">
+            
+            <div class="rodape_imagens">
+                <img src="./Imagens/bloco2.png" alt="Logo do desenvolvedor do Jogo Ivad">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./Animacao/animacaoSite.js"></script>
+</body>
+</DOCTYPE html>
